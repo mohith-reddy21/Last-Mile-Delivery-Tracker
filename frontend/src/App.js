@@ -143,7 +143,7 @@ function App() {
                 localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:5000/api/deliveries",
+                "https://last-mile-delivery-tracker-9ggm.onrender.com/api/deliveries",
                 {
                     method: "POST",
 
@@ -205,7 +205,7 @@ function App() {
                 localStorage.getItem("token");
 
             const response = await fetch(
-                "http://localhost:5000/api/deliveries/my",
+                "https://last-mile-delivery-tracker-9ggm.onrender.com/api/deliveries/my",
                 {
                     method: "GET",
 
@@ -283,7 +283,7 @@ function App() {
                 localStorage.getItem("token");
 
             const response = await fetch(
-                `http://localhost:5000/api/deliveries/${selectedDelivery._id}/${action}`,
+                `https://last-mile-delivery-tracker-9ggm.onrender.com/api/deliveries/${selectedDelivery._id}/${action}`,
                 {
                     method: "PUT",
 
