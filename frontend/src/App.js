@@ -83,11 +83,7 @@ function App() {
 
             if (!response.ok) {
 
-                setMessage(
-                    data.message ||
-                    data.error ||
-                    "Login failed"
-                );
+                setMessage(JSON.stringify(data));
 
                 return;
             }
